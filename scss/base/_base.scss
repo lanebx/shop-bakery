@@ -1,0 +1,23 @@
+$font-family: Poppins;
+$font-size: 18px;
+$font-style: normal;
+$font-weight: 600;
+$line-height: normal;
+
+$color-background: #FAF4EA;
+$color-primary: #819B57;
+
+
+
+body {
+  font-family: $font-family;
+  background-color: $color-background;
+}
+
+button {
+  font-family: $font-family;
+  font-size: $font-size;
+  font-style: $font-style;
+  font-weight: $font-weight;
+  color: $color-background;
+}

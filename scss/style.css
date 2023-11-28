@@ -1,1 +1,27 @@
-/*# sourceMappingURL=style.css.map */
+body {
+  font-family: Poppins;
+  background-color: #FAF4EA;
+}
+
+button {
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  color: #FAF4EA;
+}
+
+.call-button {
+  padding: 16px 32px;
+  border-radius: 8px;
+  border: 2px solid #819B57;
+  background: #819B57;
+  transition: box-shadow 0.3s ease-in-out;
+}
+.call-button:hover {
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+}
+.call-button:active {
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.25);
+}/*# sourceMappingURL=style.css.map */
