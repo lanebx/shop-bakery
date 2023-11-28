@@ -5,25 +5,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>shop bakery</title>
+
+    <link rel="stylesheet" href="scss/style.css">
   </head>
   <body>
     <header class="header">
-      <nav class="nav">
-        <a href="#" class="logo"
+      <nav class="header__nav">
+        <a href="/" class="header__logo"
           ><img src="images/logo.svg" alt="logo Boutique Boulangerie"
         /></a>
-        <ul>
-          <li class="nav__item"><a href="#">Nos traditions</a></li>
-          <li class="nav__item"><a href="#">Chefs cuisiniers</a></li>
-          <li class="nav__item"><a href="#">Formats</a></li>
-          <li class="nav__item"><a href="#">Contacts</a></li>
+        <ul class="header__list">
+          <li class="header__item">
+            <a href="#new-traditions">Nos traditions</a>
+          </li>
+          <li class="header__item">
+            <a href="#best-chefs">Chefs cuisiniers</a>
+          </li>
+          <li class="header__item"><a href="#formats">Formats</a></li>
+          <li class="header__item"><a href="#bakery-network">Contacts</a></li>
         </ul>
-        <button class="nav__button" type="button">Demander un appel</button>
+        <button class="call-button" type="button">Demander un appel</button>
       </nav>
     </header>
 
     <main class="main">
-      <section class="modern-bakery">
+      <section class="modern-bakery" id="modern-bakery">
         <h1 class="modern-bakery__title">Boulangerie moderne</h1>
 
         <ul class="advantages">
@@ -33,7 +39,7 @@
         </ul>
       </section>
 
-      <section class="new-traditions">
+      <section class="new-traditions" id="new-traditions">
         <div class="new-traditions__info">
           <h2 class="new-traditions__title">Nouveau format de tradition</h2>
 
@@ -60,7 +66,7 @@
         </div>
       </section>
 
-      <section class="best-chefs">
+      <section class="best-chefs" id="best-chefs">
         <h2 class="best-chefs__title">Nos meilleurs chefs-cuisiniers</h2>
 
         <ul class="best-chefs__list">
@@ -92,7 +98,10 @@
           <li class="best-chefs__item">
             <article class="chef">
               <div class="chef__photo">
-                <img src="images/vlad-photo.jpg" alt="homme boulanger sérieux roule la pâte à l'aide d'une bouteille de vin en verre">
+                <img
+                  src="images/vlad-photo.jpg"
+                  alt="homme boulanger sérieux roule la pâte à l'aide d'une bouteille de vin en verre"
+                />
               </div>
 
               <div class="chef__info">
@@ -116,7 +125,7 @@
         </ul>
       </section>
 
-      <section class="formats">
+      <section class="formats" id="formats">
         <h2 class="formats__title">Formats</h2>
 
         <div class="scrollable-container">
@@ -168,22 +177,42 @@
         </div>
       </section>
 
-      <section class="bakery-network">
-        <div class="bakery-network__info"></div>
+      <section class="bakery-network" id="bakery-network">
+        <div class="bakery-network__info">
+          <h2 class="bakery-network__title">
+            Rejoignez le réseau de boulangeries
+          </h2>
 
-        <div class="bakery-network__map"></div>
+          <button class="call-button" type="button">Demander un appel</button>
+        </div>
+
+        <div class="bakery-network__map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.1640546568137!2d30.488658576660953!3d50.4566696715933!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce637bfe1717%3A0x5370c2254ad1b952!2z0YPQuy4g0KHQtdGH0LXQstGL0YUg0KHRgtGA0LXQu9GM0YbQvtCyLCA1NCwg0JrQuNC10LIsINCj0LrRgNCw0LjQvdCwLCAwMjAwMA!5e0!3m2!1sru!2sfr!4v1701094589413!5m2!1sru!2sfr"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
       </section>
     </main>
 
     <footer class="footer">
       <nav>
-        <a href="#" class="logo">Shop bakery</a>
+        <a href="/" class="footer__logo">Shop bakery</a>
 
-        <ul>
-          <li class="nav__item"><a href="#">Nos traditions</a></li>
-          <li class="nav__item"><a href="#">Chefs cuisiniers</a></li>
-          <li class="nav__item"><a href="#">Formats</a></li>
-          <li class="nav__item"><a href="#">Contacts</a></li>
+        <ul class="footer__list">
+          <li class="footer__item">
+            <a href="#new-traditions">Nos traditions</a>
+          </li>
+          <li class="footer__item">
+            <a href="#best-chefs">Chefs cuisiniers</a>
+          </li>
+          <li class="footer__item"><a href="#formats">Formats</a></li>
+          <li class="footer__item"><a href="#bakery-network">Contacts</a></li>
         </ul>
       </nav>
 
@@ -213,7 +242,7 @@
 
       <div class="privacy-policy">
         <a href="#">Politique de confidentialité</a>
-        <p>© 2023 Données protégées</p>
+        <p>&copy; 2023 Données protégées</p>
       </div>
     </footer>
   </body>

@@ -1,0 +1,22 @@
+{
+  "name": "geniusit",
+  "version": "1.0.0",
+  "description": "Page de présentation pour une boulangerie",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lanebx/shop-bakery.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lanebx/shop-bakery/issues"
+  },
+  "homepage": "https://github.com/lanebx/shop-bakery#readme",
+  "dependencies": {
+    "sass": "^1.69.5"
+  }
+}
