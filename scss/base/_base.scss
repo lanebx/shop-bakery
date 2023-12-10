@@ -1,23 +1,63 @@
 $font-family: Poppins;
 $font-size: 18px;
+$font-size-m: 22px;
 $font-style: normal;
-$font-weight: 600;
+$font-weight-l: 900;
+$font-weight-m: 600;
+$font-weight-s: 400;
 $line-height: normal;
 
 $color-background: #FAF4EA;
 $color-primary: #819B57;
 
+* {
+  box-sizing: border-box;
+  font-size: 18px;
 
+  @media (min-width: 1400px) {
+    font-size: 22px;
+  }
+}
 
 body {
   font-family: $font-family;
   background-color: $color-background;
+
+  padding: 0;
+  margin: 0;
 }
 
 button {
   font-family: $font-family;
-  font-size: $font-size;
   font-style: $font-style;
-  font-weight: $font-weight;
+  font-weight: $font-weight-m;
   color: $color-background;
+}
+
+a {
+  font-family: $font-family;
+  font-style: $font-style;
+  font-weight: $font-weight-s;
+  color: $color-background;
+
+  text-decoration: none; 
+  color: $color-background; 
+  transition: color 0.3s ease-in-out; 
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  width: 100%;
+  max-width: 1288px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.accent {
+  color: $color-primary;
 }

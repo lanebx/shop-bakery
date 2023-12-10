@@ -1,0 +1,36 @@
+.modern-bakery {
+  // background-color: palevioletred;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.1)), url(../../images/couple-in-bakery.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+  &__title {
+    text-align: center;
+
+    font-weight: $font-weight-l;
+    color: $color-background;
+    margin: 0;
+    padding: 20% 0;
+
+    &>span {
+      font-size: 9vw;
+    }
+  }
+
+
+}
+
+.advantages {
+  background: $color-primary;
+  
+  &__list{
+    display: flex;
+    justify-content: space-between;
+    font-weight: 300;
+    color: $color-background;
+    gap: 6vw;
+    padding: 16px 0;
+  }
+
+}

@@ -1,3 +1,6 @@
-@import "base/_base.scss";
-@import "buttons/_main-button.scss";
-
+@import "base/normalize";
+@import "base/_base";
+@import "buttons/_main-button";
+@import "header/header";
+@import "main/modern-bakery";
+@import "main/_new-traditions";
