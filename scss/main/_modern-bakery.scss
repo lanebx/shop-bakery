@@ -1,9 +1,9 @@
 .modern-bakery {
-  // background-color: palevioletred;
     background: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.1)), url(../../images/couple-in-bakery.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    height: calc(100vh - 52px);
 
   &__title {
     text-align: center;
@@ -17,8 +17,6 @@
       font-size: 9vw;
     }
   }
-
-
 }
 
 .advantages {

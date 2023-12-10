@@ -1,0 +1,33 @@
+.new-traditions {
+  .container {
+    display: flex;
+    justify-content:space-evenly;
+    gap: 30px;
+  }
+
+  &__info {
+    max-width: 526px;
+    display: flex;
+    flex-direction: column;
+    gap: 42px;
+  }
+
+  &__text {
+    margin: 0 0;
+  }
+
+  &__title {
+    font-weight: $font-weight-l;
+    font-size: 64px;
+    line-height: 84px;
+    margin: 0 0;
+  }
+
+  &__logo img {
+    border-top-left-radius: 100%; 
+    border-top-right-radius: 100%; 
+  }
+
+
+  
+}

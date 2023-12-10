@@ -241,9 +241,14 @@ input[type=checkbox], input[type=radio] {
   }
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: Poppins;
   background-color: #FAF4EA;
+  color: #31261A;
   padding: 0;
   margin: 0;
 }
@@ -278,8 +283,16 @@ ul {
   padding: 0 24px;
 }
 
+section:not(:nth-child(-n+2)) {
+  padding-top: 96px;
+}
+
 .accent {
   color: #819B57;
+}
+.accent--shadow {
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  text-transform: uppercase;
 }
 
 .call-button {
@@ -347,6 +360,9 @@ ul {
 .header--scrolled .header__item > a:hover {
   color: #667a45;
 }
+.header--scrolled .call-button {
+  border: 1px solid #819B57;
+}
 .header--scrolled-green {
   background-color: #819B57;
   padding-top: 0;
@@ -361,12 +377,23 @@ ul {
 .header--scrolled-green .header__item > a:hover {
   color: #f5e9d5;
 }
+.header--scrolled-green .call-button {
+  background-color: #FAF4EA;
+  color: #819B57;
+  border: 1px solid #819B57;
+}
+.header--scrolled-green .call-button:hover {
+  background-color: #819B57;
+  color: #FAF4EA;
+  border: 1px solid #FAF4EA;
+}
 
 .modern-bakery {
   background: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.1)), url(../../images/couple-in-bakery.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  height: calc(100vh - 52px);
 }
 .modern-bakery__title {
   text-align: center;
@@ -389,4 +416,29 @@ ul {
   color: #FAF4EA;
   gap: 6vw;
   padding: 16px 0;
+}
+
+.new-traditions .container {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 30px;
+}
+.new-traditions__info {
+  max-width: 526px;
+  display: flex;
+  flex-direction: column;
+  gap: 42px;
+}
+.new-traditions__text {
+  margin: 0 0;
+}
+.new-traditions__title {
+  font-weight: 900;
+  font-size: 64px;
+  line-height: 84px;
+  margin: 0 0;
+}
+.new-traditions__logo img {
+  border-top-left-radius: 100%;
+  border-top-right-radius: 100%;
 }/*# sourceMappingURL=style.css.map */
