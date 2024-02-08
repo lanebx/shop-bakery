@@ -322,7 +322,6 @@ ul {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.1)), url(/images/couple-in-bakery.jpg);
   background-repeat: no-repeat;
   background-position: left;
   background-size: cover;
@@ -558,7 +557,6 @@ ul {
 .footer {
   padding: 24px 0;
   background-color: #31261a;
-  background-image: url(../../images/footer-background.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
