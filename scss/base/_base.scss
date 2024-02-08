@@ -1,23 +1,8 @@
-$font-family: Poppins;
-$font-size: 18px;
-$font-size-m: 22px;
-$font-style: normal;
-$font-weight-l: 900;
-$font-weight-m: 600;
-$font-weight-s: 400;
-$line-height: normal;
-
-$color-background: #FAF4EA;
-$color-primary: #819B57;
-$color-text-base: #31261A;
+@import "../base/mixin";
+@import "../base/variable";
 
 * {
   box-sizing: border-box;
-  font-size: 18px;
-
-  @media (min-width: 1400px) {
-    font-size: 22px;
-  }
 }
 
 html {
@@ -25,30 +10,35 @@ html {
 }
 
 body {
+  box-sizing: border-box;
   font-family: $font-family;
-  background-color: $color-background;
-  color: $color-text-base;
+  background-color: $color-primary-light;
+  color: $color-primary-brown;
 
   padding: 0;
   margin: 0;
+
+  font-size: 18px;
+
+  @media (min-width: 1400px) {
+    font-size: 22px;
+  }
 }
 
 button {
   font-family: $font-family;
   font-style: $font-style;
   font-weight: $font-weight-m;
-  color: $color-background;
+  color: $color-primary-light;
 }
 
 a {
   font-family: $font-family;
   font-style: $font-style;
-  font-weight: $font-weight-s;
-  color: $color-background;
+  color: $color-primary-light;
 
-  text-decoration: none; 
-  color: $color-background; 
-  transition: color 0.3s ease-in-out; 
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
 }
 
 ul {
@@ -62,18 +52,23 @@ ul {
   max-width: 1288px;
   margin: 0 auto;
   padding: 0 24px;
-
-}
-
-section:not(:nth-child(-n+2)) {
-  padding-top: 96px;
 }
 
 .accent {
-  color: $color-primary;
+  color: $color-primary-green;
+  font-size: inherit;
 
   &--shadow {
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    // text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     text-transform: uppercase;
   }
+
+  &--brown {
+    color: $color-secondary-brown;
+    font-size: 14px;
+  }
+}
+
+.decorativ-img {
+  display: none;
 }

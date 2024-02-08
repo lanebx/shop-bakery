@@ -1,34 +1,38 @@
 .modern-bakery {
-    background: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.1)), url(../../images/couple-in-bakery.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    height: calc(100vh - 52px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.1)),
+    url(../../images/couple-in-bakery.jpg);
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: cover;
+  height: calc(100vh - 52px);
 
   &__title {
     text-align: center;
+    font-size: 9vw;
 
     font-weight: $font-weight-l;
-    color: $color-background;
+    color: $color-primary-light;
     margin: 0;
-    padding: 20% 0;
+  }
 
-    &>span {
-      font-size: 9vw;
-    }
+  &__call-button {
+    display: none;
   }
 }
 
 .advantages {
-  background: $color-primary;
-  
-  &__list{
-    display: flex;
-    justify-content: space-between;
-    font-weight: 300;
-    color: $color-background;
-    gap: 6vw;
-    padding: 16px 0;
-  }
+  background: $color-primary-green;
+}
 
+.advantages__list {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 300;
+  color: $color-primary-light;
+  gap: 6vw;
+  padding: 16px 0;
 }

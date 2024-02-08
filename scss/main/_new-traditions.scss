@@ -1,7 +1,9 @@
 .new-traditions {
+  margin-top: 80px;
+
   .container {
     display: flex;
-    justify-content:space-evenly;
+    justify-content: space-evenly;
     gap: 30px;
   }
 
@@ -9,25 +11,17 @@
     max-width: 526px;
     display: flex;
     flex-direction: column;
-    gap: 42px;
-  }
-
-  &__text {
-    margin: 0 0;
+    align-self: center;
   }
 
   &__title {
-    font-weight: $font-weight-l;
-    font-size: 64px;
-    line-height: 84px;
-    margin: 0 0;
+    @include title;
+    margin: 0;
   }
 
   &__logo img {
-    border-top-left-radius: 100%; 
-    border-top-right-radius: 100%; 
+    // border-top-left-radius: 100%;
+    // border-top-right-radius: 100%;
+    border-radius: 400px 400px 0px 0px;
   }
-
-
-  
 }

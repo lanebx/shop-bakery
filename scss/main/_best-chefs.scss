@@ -1,0 +1,65 @@
+.best-chefs {
+  margin-top: 80px;
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  &__title {
+    @include title;
+
+    &::after {
+      @include linePseudoEl;
+    }
+
+    &::before {
+      @include linePseudoEl;
+      position: relative;
+      left: 72vw;
+      top: 170px;
+    }
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-around;
+    gap: 40px;
+  }
+
+  &__item {
+    flex: 1;
+  }
+
+  
+}
+
+.chef {
+  display: flex;
+  gap: 20px;
+
+  &__photo {
+    flex: 50%;
+    img {
+      border-radius: 4px 4px 4px 200px;
+      box-shadow: $color-primary-light -16px 16px 0 0,
+        $color-secondary-light -16px 16px 0px 2px;
+      width: 100%; // Ширина изображения занимает 100% ширины .chef__photo
+    }
+  }
+
+  &__info {
+    flex: 50%;
+  }
+
+  @media (max-width: 900px) {
+    &__photo {
+      flex: 40%;
+    }
+
+    &__info {
+      flex: 60%;
+    }
+  }
+}

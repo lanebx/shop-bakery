@@ -1,0 +1,53 @@
+@mixin title {
+  text-align: center;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 84px;
+  margin: 0;
+}
+
+@mixin linePseudoEl {
+  display: block;
+  content: "";
+  width: 25%;
+  height: 2px;
+  background: $color-secondary-light;
+}
+
+@mixin greenTextHeader  {
+  .header__svg {
+      fill: $color-primary-green;
+
+      path {
+        fill: $color-primary-green;
+      }
+    }
+
+    .header__item > a {
+      color: $color-primary-green;
+
+      &:hover {
+        color: $color-secondary-green;
+      }
+    }
+
+    .header__burger {
+      span {
+        background-color: $color-primary-green;
+      }
+
+      &::before,
+      &::after {
+        background-color: $color-primary-green;
+      }
+
+      &:hover {
+        span,
+        &::after,
+        &::before {
+          background-color: $color-secondary-green;
+        }
+      }
+    }
+}

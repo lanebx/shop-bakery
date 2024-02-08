@@ -1,6 +1,16 @@
-@import "base/normalize";
-@import "base/_base";
-@import "buttons/_main-button";
+// @import "base/normalize";
+@import "base/base";
+@import "buttons/call-button";
 @import "header/header";
+@import "header/header-mobile";
 @import "main/modern-bakery";
-@import "main/_new-traditions";
+@import "main/new-traditions";
+@import "main/best-chefs";
+@import "main/formats";
+
+@import "main/bakery-network";
+
+@import "main/footer";
+
+
+@import "main/main-mobile";

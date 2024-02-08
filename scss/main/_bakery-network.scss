@@ -1,0 +1,59 @@
+.bakery-network {
+  margin: 80px 0;
+  
+  .container {
+    display: flex;
+    gap: 32px;
+    justify-content: center;
+  }
+
+  &__title {
+    line-height: normal;
+    font-size: 220%;
+    padding-bottom: 20px;
+  }
+
+  &__info, &__map {
+    flex: 50%;
+  }
+  
+  &__iframe {
+    width: 100%;
+  }
+
+  @media (max-width: 900px) {
+    .container {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      align-content: center;
+    }
+  }
+}
+.call-form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 20px 0;
+
+  &__input {
+    color: $color-secondary-brown;
+    background-color: $color-primary-light;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid $color-secondary-brown;
+    border-radius: 5px;
+    outline: none; // Убирает рамку при фокусе
+    transition: border-color 0.3s ease; // Плавный переход цвета рамки
+    width: 100%; // Занимает 100% доступной ширины
+    box-sizing: border-box; // Учитывает padding и border в общей ширине элемента
+
+    &:focus {
+      border-color: $color-primary-brown; // Цвет рамки при фокусе
+    }
+
+    &::placeholder {
+      color: #7e7272; // Цвет плейсхолдера
+    }
+  }
+}

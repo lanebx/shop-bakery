@@ -1,0 +1,64 @@
+@media (max-width: 900px) {
+  .title {
+    text-align: center;
+    font-size: 48px;
+    margin: 0;
+    line-height: normal;
+  }
+
+  .modern-bakery {
+    height: 100vh;
+
+    &__title {
+      text-align: center;
+      font-size: 64px;
+    }
+
+    &__call-button {
+      display: block;
+      margin: 32px auto 0 auto;
+    }
+  }
+
+  .advantages {
+    background: $color-primary-light;
+
+    .advantages__list {
+      display: flex;
+      flex-direction: column;
+      background: $color-secondary-light;
+
+      font-weight: 300;
+      color: $color-primary-light;
+      gap: 6vw;
+      padding: 32px;
+      border-radius: 24px;
+      margin: 24px;
+    }
+  }
+
+  .new-traditions {
+    &__title {
+      text-align: start;
+    }
+
+    &__logo {
+      display: none;
+    }
+  }
+
+  .best-chefs {
+    &__title {
+      &::before {
+        left: 72vw;
+        top: 112px;
+      }
+    }
+
+    &__list {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+}
