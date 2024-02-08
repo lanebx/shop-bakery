@@ -28,36 +28,6 @@
     border-radius: 16px;
   }
 
-  .image-walrus {
-    background: linear-gradient(
-        180deg,
-        rgba(49, 38, 26, 0)30%,
-        rgba(49, 38, 26, 0.71) 70%,
-        $color-primary-brown 100%
-      ),
-      url(../../images/walrus-format.jpg) center/cover;
-  }
-
-  .image-horseshoe {
-    background: linear-gradient(
-        180deg,
-        rgba(49, 38, 26, 0)30%,
-        rgba(49, 38, 26, 0.71) 70%,
-        $color-primary-brown 100%
-      ),
-      url(../../images/horseshoe-format.jpg) center/cover;
-  }
-
-  .image-handlebar {
-    background: linear-gradient(
-        180deg,
-        rgba(49, 38, 26, 0)30%,
-        rgba(49, 38, 26, 0.71) 70%,
-        $color-primary-brown 100%
-      ),
-      url(../../images/handlebar-format.jpg) center/cover;
-  }
-
   .format {
     display: flex;
     flex-direction: column;
