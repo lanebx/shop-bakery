@@ -1,4 +1,5 @@
 .footer {
+  width: 100%;
   padding: 24px 0;
   background-color: $color-primary-brown;
   background-repeat: no-repeat;
@@ -13,10 +14,9 @@
       color: $color-primary-green;
 
       svg path {
-        fill: $color-primary-green; 
+        fill: $color-primary-green;
       }
     }
-
   }
 
   .container {

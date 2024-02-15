@@ -1,6 +1,7 @@
 .bakery-network {
+  width: 100%;
   margin: 80px 0;
-  
+
   .container {
     display: flex;
     gap: 32px;
@@ -13,10 +14,11 @@
     padding-bottom: 20px;
   }
 
-  &__info, &__map {
+  &__info,
+  &__map {
     flex: 50%;
   }
-  
+
   &__iframe {
     width: 100%;
   }
