@@ -3,6 +3,11 @@ document.addEventListener("DOMContentLoaded", function () {
   let advantages = document.getElementById("advantages");
   let burger = document.querySelector(".header__burger");
   let navItems = document.querySelectorAll(".header__item a"); // Выбираем все элементы списка
+  let modal = document.getElementById("myModal"); // Получаем модальное окно
+  let callButton = document.querySelector(".modern-bakery__call-button"); // Получаем кнопку "Demander un appel"
+  let callButtonHeader = document.querySelector(".header__call-button"); // Получаем кнопку "Demander un appel"
+  let closeButton = document.querySelector(".close"); // Получаем кнопку закрытия модального окна
+
 
   window.addEventListener("scroll", function () {
     let scrollY = window.scrollY || window.pageYOffset;
@@ -29,4 +34,31 @@ document.addEventListener("DOMContentLoaded", function () {
   navItems.forEach(function (item) {
     item.addEventListener("click", toggleActiveClass);
   });
+
+  callButtonHeader.addEventListener("click", function () {
+    modal.style.display = "flex";
+  });
+
+  callButton.addEventListener("click", function () {
+    modal.style.display = "flex";
+  });
+
+  // Закрытие модального окна при клике на кнопку закрытия
+  closeButton.addEventListener("click", function () {
+    modal.style.display = "none";
+  });
+
+  // Закрытие модального окна при клике вне его области
+  window.addEventListener("click", function (event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  });
+
+
 });
+
+function showMessage() {
+  alert("Votre demande d'appel a été envoyée!");
+}
+

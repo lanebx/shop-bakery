@@ -64,6 +64,119 @@ ul {
   display: none;
 }
 
+.modal {
+  display: none;
+  position: fixed;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+@media (max-width: 900px) {
+  .modal .modal__title {
+    font-size: 2.2rem;
+    line-height: 2.2rem;
+    margin-bottom: 10px;
+  }
+  .modal .modal__info {
+    font-size: 16px;
+    margin-bottom: 16px;
+  }
+}
+.modal__title {
+  text-align: center;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 84px; /* 131.25% */
+  margin: 0;
+}
+.modal__info {
+  text-align: center;
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0;
+  margin-bottom: 32px;
+}
+.modal .modal-content {
+  background-color: #faf4ea;
+  padding: 80px;
+  border: 1px solid #888;
+  border-radius: 32px;
+  width: 800px;
+  position: relative;
+}
+@media (max-width: 900px) {
+  .modal .modal-content {
+    padding: 40px;
+  }
+}
+.modal .close {
+  display: block;
+  position: absolute;
+  right: 35px;
+  top: 35px;
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+@media (max-width: 900px) {
+  .modal .close {
+    top: 25px;
+  }
+}
+.modal .close:hover,
+.modal .close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+.modal .call-form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.modal .call-form__button {
+  width: 50%;
+  align-self: center;
+}
+.modal .call-form__img {
+  display: block;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.modal .call-form__input {
+  color: #a18268;
+  background-color: #faf4ea;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #a18268;
+  border-radius: 5px;
+  outline: none;
+  transition: border-color 0.3s ease;
+  width: 100%;
+  box-sizing: border-box;
+}
+.modal .call-form__input:focus {
+  border-color: #31261a;
+}
+.modal .call-form__input::-moz-placeholder {
+  color: #7e7272;
+}
+.modal .call-form__input::placeholder {
+  color: #7e7272;
+}
+
 .call-button {
   font-size: 18px;
   padding: 16px 32px;
@@ -84,6 +197,9 @@ ul {
   .call-button {
     padding: 16px 24px;
   }
+}
+.call-button:disabled {
+  cursor: not-allowed;
 }
 
 .header--scrolled-green .call-button {
@@ -619,13 +735,13 @@ ul {
   .advantages .advantages__list {
     display: flex;
     flex-direction: column;
-    background: #cfcfbc;
+    background: #819b57;
     font-weight: 300;
     color: #faf4ea;
     gap: 6vw;
     padding: 32px;
     border-radius: 24px;
-    margin: 24px;
+    margin-top: 24px;
   }
   .new-traditions__title {
     text-align: start;

@@ -25,6 +25,10 @@
   @media (max-width: 1000px) {
     padding: 16px 24px;
   }
+
+  &:disabled {
+    cursor: not-allowed;
+  }
 }
 
 .header--scrolled-green {
